@@ -352,10 +352,8 @@ fn handle_update(
         }
         CONSENSUS_NOTIFY_ENGINE_DEACTIVATED => Update::Shutdown,
         unexpected => {
-            return Err(Error::ReceiveError(format!(
-                "Received unexpected message type: {:?}",
-                unexpected
-            )));
+            error!("Received unexpected message type: {:?}", unexpected);
+            return Ok(());
         }
     };
 
