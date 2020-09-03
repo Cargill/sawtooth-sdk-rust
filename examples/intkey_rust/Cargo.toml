@@ -19,6 +19,12 @@
 name = "sawtooth-intkey-tp-rust"
 version = "0.5.1"
 authors = ["Bitwise IO, Inc."]
+edition = "2018"
+license = "Apache-2.0"
+description = """\
+    Sawtooth Intkey is a Sawtooth transaction handler for executing \
+    intkey transactions as part of Hyperledger Sawtooth
+"""
 
 [[bin]]
 name = "intkey-tp-rust"
